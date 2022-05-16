@@ -20,4 +20,5 @@ El siguente paso sera etiquetar las imagenes para ello iremos al siguiente link 
 
 Una vez etiquetadas todas las imagenes exportaremos las etiquetas (labels) en un .json 
 
-json-tfrecords.py:este archivo nos permitira convertir el JSON con las etiquetas a un tfrecords habra que usar este archivo  
+json_tfrecords_test.py:este archivo nos permitira convertir el archivo que contenia las etiquetas en el Deteccion de personas - TEST.json  a un tfrecords para después poder entrenarlo con nuestro modelo
+json_tfrecords_train.py:este archivo nos permitira convertir el archivo que contenia las etiquetas en el Deteccion de Personas - TRAIN.JSON  a un tfrecords para después poder entrenarlo con nuestro modelo
