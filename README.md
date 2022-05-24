@@ -10,6 +10,8 @@ Descripción:En este projecto se creara una IA con deep learning para detectar p
 
 4- Entrenamiento de la red neuronal
 
+5-
+
 Dataset utilizado: https://www.kaggle.com/datasets/constantinwerner/human-detection-dataset
 
 Distribucion-dataset.py: El primer paso de este projecto será separar el  dataset en 70% para entrenar y el 30% para hacer el test
@@ -20,8 +22,9 @@ El siguente paso sera etiquetar las imagenes para ello iremos al siguiente link 
 
 Una vez etiquetadas todas las imagenes exportaremos las etiquetas (labels) en un .json 
 
-json_tfrecords_test.py:este archivo nos permitira convertir el archivo que contenia las etiquetas en el Deteccion de personas - TEST.json  a un tfrecords para después poder entrenarlo con nuestro modelo
-json_tfrecords_train.py:este archivo nos permitira convertir el archivo que contenia las etiquetas en el Deteccion de Personas - TRAIN.JSON  a un tfrecords para después poder entrenarlo con nuestro modelo
+json_tfrecords_test.py:Este archivo nos permitira convertir el archivo que contenia las etiquetas en el Deteccion de personas - TEST.json  a un tfrecords para después poder entrenarlo con nuestro modelo
+json_tfrecords_train.py:Este archivo nos permitira convertir el archivo que contenia las etiquetas en el Deteccion de Personas - TRAIN.JSON  a un tfrecords para después poder entrenarlo con nuestro modelo
 
-entrenamiento_del_modelo.py: 
+entrenamiento_del_modelo.py: Aquí entrenaremos el modelo en esta ocasión utilizaremos el modelo pre-entrenado SSD + MobileNetV2
+
 inference.py:
