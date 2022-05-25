@@ -8,9 +8,9 @@ Descripción:En este projecto se creara una IA con deep learning para detectar p
 
 3-Convertir .json a TFrecord
 
-4- Entrenamiento de la red neuronal
+4-Entrenamiento de la red neuronal
 
-5-
+5-Testeo de la red neuronal
 
 Dataset utilizado: https://www.kaggle.com/datasets/constantinwerner/human-detection-dataset
 
@@ -28,3 +28,4 @@ json_tfrecords_train.py:Este archivo nos permitira convertir el archivo que cont
 entrenamiento_del_modelo.py: Aquí entrenaremos el modelo en esta ocasión utilizaremos el modelo pre-entrenado SSD + MobileNetV2
 
 inference.py:
+centroidtracker  y trackerobject
