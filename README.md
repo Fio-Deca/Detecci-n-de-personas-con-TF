@@ -1,22 +1,20 @@
-# Detección-de-personas-con-TF
+# Detección-de-personas-con-TF :frowning_man:	
 
-Descripción: En este proyecto se creará una IA con deep learning para detectar personas utilizando una segmentación de imágenes de tipo instancias que se dividirá en 5 partes:
+En este proyecto se creará una IA con deep learning para detectar personas utilizando una segmentación de imágenes de tipo instancias.
 
-1- Distribución del dataset
+## Dataset Utilizado :books:	
+https://www.kaggle.com/datasets/constantinwerner/human-detection-dataset
 
-2-Etiquetación 
+## Entorno de trabajo :test_tube:	
+-Google Colab
 
-3-Convertir .json a TFrecord
-
-4-Entrenamiento de la red neuronal
-
-5-Testeo de la red neuronal
-
-Dataset utilizado: https://www.kaggle.com/datasets/constantinwerner/human-detection-dataset
-
-El entorno utilizado para este proyecto ha sido Google Colab.
+## Partes del proyecto :gear:	
+ 
+### 1- Distribución del dataset :balance_scale:	
 
 Distribucion-dataset.py: El primer paso de este projecto será separar el dataset en 70% para entrenar y el 30% para hacer el test.
+
+### 2-Etiquetación :label:	
 
 El siguiente paso será etiquetar las imágenes, para ello iremos al siguiente link https://platform.linkedai.co/ el cual es una página web en la cual nos lo permitirá, en este caso primero etiquetaremos las imágenes de entreno y después las de test que estarán en proyecto distintos.
 
@@ -24,14 +22,22 @@ El siguiente paso será etiquetar las imágenes, para ello iremos al siguiente l
 
 Una vez etiquetadas todas las imagenes exportaremos las etiquetas (labels) en un .json 
 
-json_tfrecords_test.py:Este archivo nos permitirá convertir el archivo que contenía las etiquetas en el Deteccion de personas - TEST.json a un tfrecords para después poder entrenarlo con nuestro modelo
+### 3-Convertir .json a TFrecord :currency_exchange:	
 
-json_tfrecords_train.py:Este archivo nos permitirá convertir el archivo que contenía las etiquetas en el Deteccion de Personas - TRAIN.JSON a un tfrecords para después poder entrenarlo con nuestro modelo
+json_tfrecords_test.py:Este archivo nos permitirá convertir el archivo que contenía las etiquetas en el Deteccion de personas - TEST.json a un tfrecords para después poder entrenarlo con nuestro modelo.
 
-entrenamiento_del_modelo.py: Aquí entrenaremos el modelo, en esta ocasión utilizaremos el modelo pre-entrenado SSD + MobileNetV2
+json_tfrecords_train.py:Este archivo nos permitirá convertir el archivo que contenía las etiquetas en el Deteccion de Personas - TRAIN.JSON a un tfrecords para después poder entrenarlo con nuestro modelo.
 
-Test.py: Nos permitirá usar el modelo que hemos creado a través de imágenes y videos
+### 4-Entrenamiento de la red neuronal :weight_lifting_man:	
 
-centroidtracker.py: Detectará objetos y los registrará
+entrenamiento_del_modelo.py: Aquí entrenaremos el modelo, en esta ocasión utilizaremos el modelo pre-entrenado SSD + MobileNetV2.
 
-trackerobject.py: Identificará los objetos poniéndoles un ID
+### 5-Testeo de la red neuronal :1st_place_medal:	
+
+Test.py: Nos permitirá usar el modelo que hemos creado a través de imágenes y videos.
+
+## Otros archivos :notebook_with_decorative_cover:	 
+
+centroidtracker.py: Detectará objetos y los registrará.
+
+trackerobject.py: Identificará los objetos poniéndoles un ID.
