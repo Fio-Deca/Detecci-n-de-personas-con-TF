@@ -8,7 +8,7 @@ https://www.kaggle.com/datasets/constantinwerner/human-detection-dataset
 ## Entorno de trabajo :test_tube:	
 -Google Colab
 
-## Partes del proyecto :gear:	
+## Partes del proyecto (código) :gear:	
  
 ### 1- Distribución del dataset :balance_scale:	
 
@@ -36,7 +36,7 @@ entrenamiento_del_modelo.py: Aquí entrenaremos el modelo, en esta ocasión util
 
 Test.py: Nos permitirá usar el modelo que hemos creado a través de imágenes y videos.
 
-## Otros archivos :notebook_with_decorative_cover:	 
+### Otros archivos :notebook_with_decorative_cover:	 
 
 centroidtracker.py: Detectará objetos y los registrará.
 
