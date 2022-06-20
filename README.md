@@ -41,3 +41,7 @@ Test.py: Nos permitirá usar el modelo que hemos creado a través de imágenes y
 centroidtracker.py: Detectará objetos y los registrará.
 
 trackerobject.py: Identificará los objetos poniéndoles un ID.
+
+#¿Cómo usar la IA?
+
+Para utilizar la IA lo que tendremos que hacer es importar el archivo test.py desde google colab, ahora tenemos que subir los archivos label_map.pbtxt ,el modelo_entrenado.zip y la imagen prueba1.png dentro del almacenamiento de sesión
